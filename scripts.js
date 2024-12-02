@@ -1,20 +1,23 @@
+// このコードは、ページの読み込みが完了したときに、特定のボタンがクリックされた場合に特定の要素の表示/非表示を切り替えるためのスクリプトです。具体的には、
+// 「よくある質問」の各質問に対応するボタンをクリックすると、回答部分が表示または非表示になります。
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("positive").onclick = show; // 関数の参照を代入
-    document.getElementById("negative").onclick = unshow;
-    
-    function show() {
-        console.log("Button clicked");
-        document.getElementById("positive").classList.add("unshow");
-        document.getElementById("answer").classList.remove("unshow");
-        document.getElementById("negative").classList.remove("unshow");
-    };
-
-    function unshow() {
-        console.log("Button clicked");
-        document.getElementById("positive").classList.remove("unshow");
-        document.getElementById("answer").classList.add("unshow");
-        document.getElementById("negative").classList.add("unshow");
-    };
+     // 質問1------------------------------------------------
+     document.getElementById("positive1").onclick = show1; // 関数の参照を代入
+     document.getElementById("negative1").onclick = unshow1;
+     
+     function show1() {
+         console.log("Button clicked");
+         document.getElementById("positive1").classList.add("unshow");
+         document.getElementById("answer1").classList.remove("unshow");
+         document.getElementById("negative1").classList.remove("unshow");
+     };
+ 
+     function unshow1() {
+         console.log("Button clicked");
+         document.getElementById("positive1").classList.remove("unshow");
+         document.getElementById("answer1").classList.add("unshow");
+         document.getElementById("negative1").classList.add("unshow");
+     };
 
     // 質問２------------------------------------------------
     document.getElementById("positive2").onclick = show2; // 関数の参照を代入
